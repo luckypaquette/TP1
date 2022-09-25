@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>Facturation Hydro-Cegep</title>
+    <meta name="author" content="Luc Paquette">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <h2>Facturation Hydro-Cégep</h2><br>
+
+    <img src="img/Logo-Q-hydro.png" alt="Logotype Hydro-Quebec blanc sur fond noir"><br><br>
+
+    <form name="form">
+        <!-- Entrées -->
+
+        Veuillez Entrer votre numéro d'abonnement : <input type="text" name="F_NumeroAbonnement" size="12">&nbsp;<br>
+        Il ne doit contenir des letttres (A-Z) et des chiffres (0-9) <br><br>
+
+        Veuillez Entrer le nombre de jours total à facturer : <input type="text" name="F_NombreJours"
+            size="4">&nbsp;Jours<br>
+        Il ne doit contenir que des chiffres (0-9), les nombres seront arrondies à la haute. <br><br>
+
+        Veuillez Entrer la consommation totale en Kw : <input type="text" name="F_NombreKw" size="4">&nbsp;Kw<br>
+        Il ne doit contenir que des chiffres (0-9) <br><br><br>
+
+        <input type="button" value="Calculer la facture" onclick="Calcul()"><br><br><br>
+
+        <!-- Sorties -->
+
+        Montant de la redevance: <input type="text" name="F_MontantRedevance" size="4">&nbsp;$<br><br>
+
+        Montant des Kw de base: <input type="text" name="F_MontantKwBase" size="4">&nbsp;$<br><br>
+
+        Montant des Kilowatts excédentaires: <input type="text" name="F_MontantKwExcedent" size="4">&nbsp;$<br><br>
+
+        Montant total des Kilowatts consommés: <input type="text" name="F_MontantKwTotal" size="4">&nbsp;$<br><br>
+
+        Montant Sous-Total: <input type="text" name="F_SousTotal" size="4">&nbsp;$<br><br>
+
+        Montant de la Taxe: <input type="text" name="F_MontantTaxe" size="4">&nbsp;$<br><br>
+
+        Montant Total de la facture: <input type="text" name="F_TotalGlobal" size="4">&nbsp;$<br><br>
+    </form>
+</body>
+
+</html>
